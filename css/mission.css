@@ -1,0 +1,166 @@
+:root{
+    --bg: #0B2936;
+    --bg-btn: #426C7E;
+    --main-Txt: #F5F7F8;
+    --border: #88E4D0;
+    --card: #193B4D;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.contain{
+    width: 100%;
+    max-width: 430px;  
+    min-width: 380px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: var(--bg);
+    overflow: hidden;
+    position: relative;
+}
+
+.pageTitle{
+    font-size: 1.8rem;
+    color: var(--main-Txt);
+    padding: 25px 0 15px 35px;
+    border-bottom: 1px solid var(--border);
+}
+
+.content{
+    padding: 25px 30px;
+}
+
+.btnWrap{
+    padding-bottom: 25px;
+    display: flex;
+    gap: 10px;
+}
+.category{
+    a{
+        width: 115px;
+        height: 25px;
+        background: var(--bg-btn);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+    }
+    p{
+        font-size: 1.3rem;
+        color: var(--main-Txt);
+    }
+    img{
+        width: 10px;
+    }
+}
+.plus{
+    background: var(--bg-btn);
+    width: 26px;
+    height: 26px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 10px;
+    }
+}
+
+/* ミッション一覧 */
+.secondWrap{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 35px;
+}
+.missionWrap{
+    width: 180px;
+    height: 250px;
+    background: var(--card);
+    padding: 20px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    .missionContent{
+        color: var(--main-Txt);
+        display: flex;
+        font-size: 1.2rem;
+        gap: 25px;
+        padding-bottom: 15px;
+    }
+    .ttl{
+        gap: 10px;
+        img{
+            width: 20px;
+        }
+    }
+    .priority{
+        gap: 10px;
+        img{
+            height: 15px;
+        }
+    }
+    .btns{
+        display: flex;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+    .btn{
+        a{
+            width: 40px;
+            height: 25px;
+            background: var(--bg-btn);
+            border-radius: 10px;
+            color: var(--main-Txt);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid var(--border);
+            font-size: 1rem;
+        }
+    }
+}
+
+/* 下バー */
+.bottomBtns{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    min-width: 260px;
+    width: 60%;
+    height: 60px;
+    border-radius: 35px;
+    background: var(--bg-btn);
+    .barTxt{
+        a{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            height: 100%;
+            color: var(--main-Txt);
+        }
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    .planetBtn{
+        width: 35px;
+    }
+}
