@@ -1,0 +1,161 @@
+:root{
+    --bg: #0B2936;
+    --bg-btn: #426C7E;
+    --main-Txt: #F5F7F8;
+    --border: #88E4D0;
+}
+html{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.contain{
+    width: 100%;
+    max-width: 430px;  
+    min-width: 380px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: var(--bg);
+    overflow: hidden;
+    position: relative;
+}
+
+.topInfo{
+    display: flex;
+    padding: 25px 0 20px 20px;
+}
+
+.profile{
+    padding-bottom: 15px;
+    a{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .icon{
+            width: 30px;
+        }
+        .name{
+            color: var(--main-Txt);
+            font-size: 1.8rem;
+        }
+    }
+}
+.info{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+    .level{
+        width: 15px;
+    }
+    .gauge{
+        width: 95px;
+    }
+}
+.iconWrap{
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+    .comment{
+        width: 30px;
+    }
+    .present{
+        width: 25px;
+    }
+}
+
+.support{
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    color: var(--main-Txt);
+    font-size: 1.1rem;
+    border: 1px solid var(--border);
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    .starTitle{
+        padding-bottom: 8px;
+    }
+    .star{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+            height: 65px;
+        }
+        .starTxt{
+            p{
+                padding: 3px 0;
+            }
+        }
+    }
+}
+.storage{
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    a{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 35px;
+            padding-bottom: 5px;
+        }
+        p{
+            color: var(--main-Txt);
+            font-size: 1rem;
+        }
+    }
+}
+
+.planetWrap{
+    display: flex;
+    justify-content: center;
+    padding-top: 40%;
+    .planet{
+        width: 60%;
+    }
+}
+
+/* 下バー */
+.bottomBtns{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 300px;
+    min-width: 260px;
+    width: 60%;
+    height: 60px;
+    border-radius: 35px;
+    background: var(--bg-btn);
+    .barTxt{
+        a{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+            width: 100%;
+            height: 100%;
+            color: var(--main-Txt);
+        }
+    }
+    img{
+        width: 25px;
+        height: 25px;
+    }
+    .planetBtn{
+        width: 35px;
+    }
+}
