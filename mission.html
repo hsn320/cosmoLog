@@ -12,85 +12,104 @@
     <!-- スマホサイズ -->
     <div class="contain">
         <p class="pageTitle">ミッション一覧</p>
+        <div class="TitleBorder">
+            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="10" viewBox="0 0 390 10" fill="none">
+                <g filter="url(#filter0_f_606_1312)">
+                    <path d="M0 5C6.5 5.06667 13 5.13 19.5 5.19C78 5.73 136.5 6 195 6C253.5 6 312 5.73 370.5 5.19C377 5.13 383.5 5.06667 390 5C383.5 4.93333 377 4.87 370.5 4.81C312 4.27 253.5 4 195 4C136.5 4 78 4.27 19.5 4.81C13 4.87 6.5 4.93333 0 5Z" fill="#88E4D0"/>
+                </g>
+                <defs>
+                <filter id="filter0_f_606_1312" x="-4" y="0" width="398" height="10" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                    <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_606_1312"/>
+                </filter>
+                </defs>
+            </svg>
+        </div>
+
+        <!-- 上ボタン -->
+        <div class="btnWrap">
+            <div class="category">
+                <a href="#">
+                    <p>カテゴリー順</p>
+                    <img src="img/arrow.png" alt="">
+                </a>
+            </div>
+            <div class="plus">
+                <a href="#"><img src="img/plus.png" alt="作成"></a>
+            </div>
+        </div>
+
+        <!-- 日付 -->
+        <div class="dataWrap">
+            <div class="data">
+                <p>日</p>
+                <p>12</p>
+            </div>
+            <div class="data">
+                <p>月</p>
+                <p>13</p>
+            </div>
+            <div class="data">
+                <p>火</p>
+                <p>14</p>
+            </div>
+            <div class="data dataActive">
+                <p>水</p>
+                <p>15</p>
+            </div>
+            <div class="data">
+                <p>木</p>
+                <p>16</p>
+            </div>
+            <div class="data">
+                <p>金</p>
+                <p>17</p>
+            </div>
+            <div class="data">
+                <p>土</p>
+                <p>18</p>
+            </div>
+        </div>
 
         <div class="content">
-            <!-- 上ボタン -->
-            <div class="btnWrap">
-                <div class="category">
-                    <a href="#">
-                        <p>カテゴリー順</p>
-                        <img src="img/arrow.png" alt="">
-                    </a>
-                </div>
-                <div class="plus">
-                    <a href="#"><img src="img/plus.png" alt="作成"></a>
-                </div>
-            </div>
 
             <!-- ミッション一覧 -->
             <div class="secondWrap">
                 <div class="missionWrap">
-                    <div class="ttl missionContent">
-                        <img src="img/planet1.png" alt="">
-                        <p>数学</p>
-                    </div>
-                    <div class="priority missionContent">
-                        <p>優先度</p>
-                        <img src="img/star3.png" alt="">
-                    </div>
-                    <div class="period missionContent">
-                        <p>期限</p>
-                        <p>2026/8/3</p>
-                    </div>
-                    <div class="time missionContent">
-                        <p>時間</p>
-                        <p>???</p>
-                    </div>
-                    <div class="detail missionContent">
-                        <p>内容</p>
-                        <p>ワーク<br>p15~p20</p>
+                    <div class="missionDetailWrap">
+                        <div class="ttlWrap missionContent">
+                            <img src="img/planet1.png" alt="">
+                            <p class="ttl">数学</p>
+                        </div>
+                        <div class="missionDetail">
+                            <div class="priority missionContent">
+                                <p>優先度</p>
+                                <img src="img/star3.png" alt="">
+                            </div>
+                            <div class="dataDetail">
+                                <div class="period missionContent">
+                                    <p>期限</p>
+                                    <p>2026/8/3</p>
+                                </div>
+                                <div class="time missionContent">
+                                    <p>時間</p>
+                                    <!-- <p>???</p> -->
+                                </div>
+                            </div>
+                            <div class="detail missionContent">
+                                <p>内容</p>
+                                <p>ワークp15~p20</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="btns">
-                        <div class="btn">
+                        <div class="btn delete">
                             <a href="#">
                                 <p>削除</p>
                             </a>
                         </div>
-                        <div class="btn">
-                            <a href="missionComp.html">
-                                <p>完了</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="missionWrap">
-                    <div class="ttl missionContent">
-                        <img src="img/planet1.png" alt="">
-                        <p>国語</p>
-                    </div>
-                    <div class="priority missionContent">
-                        <p>優先度</p>
-                        <img src="img/star3.png" alt="">
-                    </div>
-                    <div class="period missionContent">
-                        <p>期限</p>
-                        <p>2026/8/5</p>
-                    </div>
-                    <div class="time missionContent">
-                        <p>時間</p>
-                        <p>???</p>
-                    </div>
-                    <div class="detail missionContent">
-                        <p>内容</p>
-                        <p>ワーク<br>p18~p22</p>
-                    </div>
-                    <div class="btns">
-                        <div class="btn">
-                            <a href="#">
-                                <p>削除</p>
-                            </a>
-                        </div>
-                        <div class="btn">
+                        <div class="btn complete">
                             <a href="missionComp.html">
                                 <p>完了</p>
                             </a>
@@ -100,67 +119,39 @@
             </div>
             <div class="secondWrap">
                 <div class="missionWrap">
-                    <div class="ttl missionContent">
-                        <img src="img/planet1.png" alt="">
-                        <p>英語</p>
-                    </div>
-                    <div class="priority missionContent">
-                        <p>優先度</p>
-                        <img src="img/star3.png" alt="">
-                    </div>
-                    <div class="period missionContent">
-                        <p>期限</p>
-                        <p>2026/8/7</p>
-                    </div>
-                    <div class="time missionContent">
-                        <p>時間</p>
-                        <p>???</p>
-                    </div>
-                    <div class="detail missionContent">
-                        <p>内容</p>
-                        <p>ワーク<br>p35~p40</p>
-                    </div>
-                    <div class="btns">
-                        <div class="btn">
-                        <a href="#">
-                            <p>削除</p>
-                        </a>
+                    <div class="missionDetailWrap">
+                        <div class="ttlWrap missionContent">
+                            <img src="img/planet1.png" alt="">
+                            <p class="ttl">英語</p>
                         </div>
-                        <div class="btn">
-                            <a href="missionComp.html">
-                                <p>完了</p>
-                            </a>
+                        <div class="missionDetail">
+                            <div class="priority missionContent">
+                                <p>優先度</p>
+                                <img src="img/star3.png" alt="">
+                            </div>
+                            <div class="dataDetail">
+                                <div class="period missionContent">
+                                    <p>期限</p>
+                                    <p>2026/8/7</p>
+                                </div>
+                                <div class="time missionContent">
+                                    <p>時間</p>
+                                    <!-- <p>???</p> -->
+                                </div>
+                            </div>
+                            <div class="detail missionContent">
+                                <p>内容</p>
+                                <p>ワークp35~p45</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="missionWrap">
-                    <div class="ttl missionContent">
-                        <img src="img/planet1.png" alt="">
-                        <p>社会</p>
-                    </div>
-                    <div class="priority missionContent">
-                        <p>優先度</p>
-                        <img src="img/star3.png" alt="">
-                    </div>
-                    <div class="period missionContent">
-                        <p>期限</p>
-                        <p>2026/8/9</p>
-                    </div>
-                    <div class="time missionContent">
-                        <p>時間</p>
-                        <p>???</p>
-                    </div>
-                    <div class="detail missionContent">
-                        <p>内容</p>
-                        <p>ワーク<br>p25~p30</p>
-                    </div>
                     <div class="btns">
-                        <div class="btn">
+                        <div class="btn delete">
                             <a href="#">
                                 <p>削除</p>
                             </a>
                         </div>
-                        <div class="btn">
+                        <div class="btn complete">
                             <a href="missionComp.html">
                                 <p>完了</p>
                             </a>
